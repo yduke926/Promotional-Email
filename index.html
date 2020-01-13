@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400|Raleway:300,400,700&display=swap" rel="stylesheet">
+    <title>shopoholic</title>
+    <style>
+        @media only screen and (max-width: 480px){
+            .container { width: 100%; }
+            /* pre-header */
+            .pre-header{
+                width: 50%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 30px 0;
+            }
+            .pre-header td, 
+            .pre-header p{
+                text-align: center;
+                display: block;
+            }
+            /* header */
+            .header,
+            .header-logo{
+                width: 100%;
+                clear: both;
+            }
+            .header { padding: 30px 0; }
+            .header-logo td {
+                text-align: center;
+                margin-top: 0;
+                padding-bottom: 20px;
+            }
+            
+            .header-logo h3 { margin-top: 0; }
+
+            /* header image row */
+            .header-images td{
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                display: block;
+            }
+
+            .header-images img{
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .header-new-season td{
+                width: 100% !important;
+                max-width: 100% !important;
+                display: block;
+            }
+            .header-new-season tr:nth-child(2){
+                padding-bottom: 0;
+                margin: 0;
+                height: 1em;
+            }
+
+            /* popular products */
+            .popular-products table{
+                width: 100%;
+                max-width: 100%;
+                text-align: center !important;
+            }
+
+            .left-product-col,
+            .center-product-col                       
+            { margin-bottom: 40px !important; }
+
+            .left-product-col img,
+            .center-product-col img,
+            .right-product-col img{ padding-bottom: 15px !important}
+
+            .left-product-col h3,
+            .center-product-col h3,
+            .right-product-col h3,
+            .right-product-col p,
+            .left-product-col p,
+            .center-product-col p{ text-align: center !important; }
+
+            .td-1 { padding-left: 29%!important; }
+            /* Coupon Row */
+            .coupon-row,
+            .coupon-row-image {width: 100%;}
+            
+            .coupon-row-image img {
+                height: auto; 
+                background-position: center; 
+                background-size: cover;
+                
+            }
+            .cr-td {background-color:  rgb(245, 64, 132) !important;}
+            /* Trending Products */
+            .tp-td{ 
+                padding: 0 30px !important;
+                width: 100%;
+            }
+            .left-trending-product,
+            .left-trending-product img,
+            .right-trending-product,
+            .right-trending-product img { width: 100%; }
+
+            .left-trending-product h3,
+            .right-trending-product h3 {
+                padding-top: 20px;
+            }
+            /* Unsubscribe Footer */
+            .uf-td { padding: 30px 20px !important}
+
+        }
+    </style>
+</head>
+<body style="background-color: #333545; padding:0 !important; margin:0 !important; display: block; overflow-x: hidden;">
+    <!-- start of email -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <!-- start of container -->
+                <table class="container"
+                width="600px"
+                border="0"
+                align="center" 
+                cellspacing="0"
+                cellpadding="0"
+                style="background-color: #333545; margin: 0 auto;">
+                <!-- start of pre-header -->
+                    <tr>
+                        <td>
+                            <table class="pre-header"
+                            width="100%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #333545;">
+                            <tr>
+                                <td style="font-family: 'Raleway', 'Arial', sans-serif; color: #85868d; font-size: 13px; line-height: 18px; text-align: left; text-decoration: none;">
+                                    <p> Enjoy free shipping and returns</p>
+                                </td>
+                                <td>
+                                    <table class="pre-header-link"
+                                    width="100%"
+                                    border="0"
+                                    cellspacing="0" style="font-family: 'Raleway', 'Arial', sans-serif; color: #85868d; font-size: 13px; line-height: 18px; text-align: right; text-decoration: none !important; ">
+                                        <tr>
+                                            <td>
+                                                <a href="#" style="text-decoration: none !important; color: #85868d; cursor: pointer;">View Online</a>
+                                                <a href="#" style="text-decoration: none !important; color: #85868d;"> | </a>
+                                                <a href="#" style="text-decoration: none !important; color: #85868d; cursor: pointer;"> Forward</a>    
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                <!-- end of pre-header -->
+                <!-- start of header -->
+                    <tr>
+                        <td style="background-color: #ffff;">
+                            <table class="header"
+                            width="50%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #ffff;
+                            float: right;">
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <img src="img/free-flag.jpg" alt="free-flag" style="float: right; vertical-align: middle;">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="header-logo"
+                            width="50%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #ffff; float: left;">
+                                <tr>
+                                    <td>
+                                        <h3 style="text-transform: uppercase; font-family: 'Noto Serif JP', Georgia, serif; color: rgb(31, 30, 30)e; font-size: 18px; letter-spacing: 4px; padding-left: 25px;">shopoholic</h3>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                <!-- end of header -->
+                <!-- start of header image row -->
+                <tr>
+                    <td>
+                        <table class="header-images"
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0">
+                            <tr>
+                                <td style="background-color: #4e54cb;">
+                                    <img src="img/header-image.jpg" alt="two models" width="325px" height="400px" >
+                                </td>
+                <!-- start of New Season Table  -->
+                                <td>
+                                    <table class="header-new-season" width="100%" height="404px" style="background-color: #4e54cb; padding:33px; margin: 0;">
+                                        <tr>
+                                            <td>
+                                                <p style="text-transform: uppercase; color: #ffff; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0;">new colors</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h1 style="text-transform: uppercase; color: #ffff; font-family: Arial, Helvetica, sans-serif; font-size: 50px; margin: 0;">New <br/> Season </h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:0;">
+                                                <p style="font-family: 'Raleway', 'Arial', sans-serif; color: #d2d4ff; font-size: 14px; line-height: 24px; text-align: left; text-decoration: none; padding-right: 50px; margin: 0;"> We are committed to your satisfaction with every order</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" style=" font-family: 'Raleway', 'Arial', sans-serif; font-weight: 700; font-size: 14px; color: #4e54cb; background-color: #ffff; border: solid 1px #ffff; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px;"> Shop Now </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                <!-- end of New Season Table  -->
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end of header image row  -->
+                <!-- start of popular products row -->
+                <tr>
+                    <td style="background-color: #ffff; padding-bottom: 50px;">
+                        <table class="popular-products"
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="padding: 20px; padding-left: 0px">
+                            <tr>
+                                <td>
+                                    <h3 style="text-align: center; text-transform: uppercase; font-family: 'Noto Serif JP', Georgia, serif;  font-size: 14px; line-height: 20px; letter-spacing: 3.3px; padding: 40px 0; margin: 0;">Popular Products</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  style="padding-left: 12px;" class="td-1">
+                                    <!-- start of left product column -->
+                                    <table class="left-product-col"
+                                    width="33%"
+                                    border="0"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    style="display: inline-block;">
+                                        <tr>
+                                            <td>
+                                                <img src="img/hat-image.jpg" alt="boater hat">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                                            font-size: 20px;
+                                                            line-height: 24px;
+                                                            text-align: left;
+                                                            padding-bottom: 15px;
+                                                            margin: 0;">Straw Boater Hat</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="color: #585858;
+                                                            font-family: 'Raleway', Arial,sans-serif;
+                                                            font-size: 12px;
+                                                            line-height: 20px;
+                                                            text-align: left;
+                                                            padding-bottom: 20px;
+                                                            margin: 0;
+                                                            width: 190px;">Straw Boater Hat features in our Accessories collection</p> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 style="color: black; font-family: 'Noto Serif JP', Georgia, serif; margin: 0 0 10px 0; padding-bottom: 20px;">Price: <span style="color: #585858; text-decoration: line-through;"> $50.00</span> <strong style="color: blue; font-weight: bold;"> $20.00 </strong> </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" style="font-family: 'Raleway', 'Arial', sans-serif; font-size: 14px; color: black; background-color: transparent; border: solid 1px black; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 50px 0 !important;">View More</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- end of left product column -->
+                                    <!-- start of center product column -->
+                                    <table class="center-product-col"
+                                    width="33%"
+                                    border="0"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    style="display: inline-block;">
+                                        <tr>
+                                            <td>
+                                                <img src="img/yellow-dress.jpg" alt="yellow dress" style="width: 100%;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                                            font-size: 20px;
+                                                            line-height: 24px;
+                                                            text-align: left;
+                                                            padding-bottom: 15px;
+                                                            margin: 0;">Yellow Dress</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="color: #585858;
+                                                            font-family: 'Raleway', Arial,sans-serif;
+                                                            font-size: 12px;
+                                                            line-height: 20px;
+                                                            text-align: left;
+                                                            padding-bottom: 20px;
+                                                            margin: 0;
+                                                            width: 190px;">Yellow Dress Cover Up features in our Winter collection</p> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 style="color: black; font-family: 'Noto Serif JP', Georgia, serif; margin: 0 0 10px 0; padding-bottom: 20px;">Price: <span style="color: #585858; text-decoration: line-through;"> $150.00</span> <strong style="color: blue; font-weight: bold;"> $100.00 </strong> </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" style="font-family: 'Raleway', 'Arial', sans-serif; font-size: 14px; color: black; background-color: transparent; border: solid 1px black; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 50px 0 !important;">View More</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- end of center product column -->
+                                    <!-- start of right product column -->
+                                    <table class="right-product-col"
+                                    width="32%"
+                                    border="0"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    style="display: inline-block;">
+                                        <tr>
+                                            <td>
+                                                <img src="img/denim-top.jpg" alt="Denim Jacket" style="width: 100%;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                                            font-size: 20px;
+                                                            line-height: 24px;
+                                                            text-align: left;
+                                                            padding-bottom: 15px;
+                                                            margin: 0;">Denim Top</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="color: #585858;
+                                                            font-family: 'Raleway', Arial,sans-serif;
+                                                            font-size: 12px;
+                                                            line-height: 20px;
+                                                            text-align: left;
+                                                            padding-bottom: 20px;
+                                                            margin: 0;
+                                                            width: 190px;">Denim Summer Top 2018 Euro Style Long Shirt</p> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 style="color: black; font-family: 'Noto Serif JP', Georgia, serif; margin: 0 0 10px 0; padding-bottom: 20px;">Price: <span style="color: #585858; text-decoration: line-through;"> $80.00</span> <strong style="color: blue; font-weight: bold;"> $50.00 </strong> </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" style="font-family: 'Raleway', 'Arial', sans-serif; font-size: 14px; color: black; background-color: transparent; border: solid 1px black; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 50px 0 !important;">View More</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- end of right product column -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end of popular products row -->
+                <!-- start of Coupon Row -->
+                <tr>
+                    <td height="299px" style="margin: 0; padding: 0; background-color: #ffff;" class="cr-td">
+                        <table class="coupon-row-image"
+                        width="40%"
+                        border="0"
+                        align="right"
+                        cellspacing="0"
+                        cellpadding="0">
+                            <tr>
+                                <td>
+                                    <img src="img/yellow-blouse.jpg" alt="yellow blouse" width="100%" height="325px">
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="coupon-row"
+                        width="60%"
+                        height="325px"
+                        border="0"
+                        align="left" 
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="background-color:  rgb(245, 64, 132); padding: 30px; ">
+                            <tr>
+                                <td>
+                                    <table class="inner-coupon" width="100%" align="left" style="background-color: transparent; border: 1px dashed #ffff; margin: 0 auto; text-align: center;">
+                                <tr>
+                                    <td>
+                                        <h3 style="color: #ffffff;
+                                        font-family: Arial, sans-serif;
+                                        font-size: 18px;
+                                        font-weight: 200;
+                                        line-height: 24px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        padding: 30px 0 0 20px;
+                                        margin: 0;">BUY 2 ITEMS</h3>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h1 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                        font-size: 34px;
+                                        line-height: 40px;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        padding-bottom: 10px;
+                                        margin: 0;">GET 1 FOR FREE</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <h1 style="font-family: Arial,sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 200;
+                                        line-height: 24px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        padding-bottom: 15px;
+                                        margin: 0;">USE CODE: 12458</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 40px">
+                                        <a href="#" style=" font-family: 'Raleway', 'Arial', sans-serif; font-weight: 700; font-size: 14px; color: rgb(245, 64, 132); background-color: #ffff; border: solid 1px #ffff; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 0;"> Shop Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end of Coupon Row -->
+                <!-- start of Trending Products Row -->
+                <tr>
+                    <td style="background-color: #ffff;">
+                        <h3 style=" text-transform: uppercase; font-family: 'Noto Serif JP', Georgia, serif;  font-size: 14px; line-height: 20px; letter-spacing: 3.3px; text-align: center; padding: 40px 0; margin: 0 auto;">Trending Products</h3>
+                    </td>
+                </tr>
+                <!-- Start of Trending Products -->
+                <tr>
+                    <td style="background-color: #ffff; padding-left: 30px" class="tp-td">
+                        <!-- start of left trending product column -->
+                        <table class="left-trending-product"
+                        width="50%"
+                        border="0"
+                        align="left" 
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="padding-bottom: 60px">
+                            <tr>
+                                <td>
+                                    <img src="img/coat-image.jpg" alt="Athena Coat">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                    font-size: 22px;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    padding-bottom: 15px;
+                                    margin: 0;">Athena Coat</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="color: #585858;
+                                                font-family: 'Raleway', Arial,sans-serif;
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                text-align: left;
+                                                padding-bottom: 20px;
+                                                margin: 0;">Beige solid longline overcoat, has a spread collar, 2 pockets, zip closure, long sleeves, straight hem.</p> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5 style="color: black; font-family: 'Noto Serif JP', Georgia, serif; margin: 0 0 10px 0; padding-bottom: 20px;">Price: <span style="color: #585858; text-decoration: line-through;"> $250.00</span> <strong style="color: blue; font-weight: bold;"> $199.00 </strong> </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" style="font-family: 'Raleway', 'Arial', sans-serif; font-size: 14px; color: black; background-color: transparent; border: solid 1px black; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 50px 0 !important;">Buy Now</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end of left trending product column -->
+                        <!-- start of right trending product column -->
+                        <table class="right-trending-product"
+                        width="50%"
+                        border="0"
+                        align="left" 
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="padding-bottom: 60px">
+                            <tr>
+                                <td>
+                                    <img src="img/white-outerwear.jpg" alt="White Outerwear">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 style="font-family: 'Noto Serif JP', Georgia, serif;
+                                    font-size: 22px;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    padding-bottom: 15px;
+                                    margin: 0;">White Outerwear</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="color: #585858;
+                                                font-family: 'Raleway', Arial,sans-serif;
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                text-align: left;
+                                                padding-bottom: 20px;
+                                                margin: 0;">Complete any outfit with the White Out Distressed Denim Jacket. Featuring an oversized fit.</p> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5 style="color: black; font-family: 'Noto Serif JP', Georgia, serif; margin: 0 0 10px 0; padding-bottom: 20px;">Price: <span style="color: #585858; text-decoration: line-through;"> $280.00</span> <strong style="color: blue; font-weight: bold;"> $199.00 </strong> </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" style="font-family: 'Raleway', 'Arial', sans-serif; font-size: 14px; color: black; background-color: transparent; border: solid 1px black; border-radius: 1px; padding: 10px 30px; text-decoration: none; text-transform: uppercase; line-height: 18px; margin: 50px 0 !important;">Buy Now</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end of right trending product column -->
+                    </td>
+                </tr>
+                <!-- end of Trending Products -->
+                <!-- end of Trending Products Row -->
+                <!-- start of footer -->
+                <tr>
+                    <td style="background-color: #4e54cb; padding: 60px 30px;">
+                        <table class="footer"
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0" >
+                            <tr>
+                                <td style="color:#ffffff; font-family:'Raleway', Arial, sans-serif; font-size:14px; line-height:22px; text-align:center; text-transform:uppercase; letter-spacing: 3.3px; padding:30px 0;">follow us</td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #ffff; text-align: center; padding-bottom: 30px;">
+                                    <a href="#"><img src="img/fb_icon.png" alt="facebook icon" style="padding-right: 5px;"></a>
+                                    <a href="#"><img src="img/twitter_icon.png" alt="twitter icon" style="padding-right: 5px;"></a>
+                                    <a href="#"><img src="img/gplus_icon.png" alt="google plus icon" style="padding-right: 5px;"></a>
+                                    <a href="#"><img src="img/yt_icon.png" alt="youtube icon" style="padding-right: 5px;"></a>
+                                    <a href="#"><img src="img/pin_icon.png" alt="pinterest icon" style="padding-right: 5px;"></a>
+                                    <a href="#"><img src="img/Linked_icon.png" alt="Linked In icon" style="padding-right: 5px;"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 1px solid #5e63d3;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 30px;">
+                                    <p style="font-family: 'Raleway', 'Arial', sans-serif; color:#a9ace3; font-size: 12px; line-height: 20px; text-align: left; text-decoration: none; margin: 0; text-align: center;">Copyright © 0123 Shopilicious <br/>
+                                        728 Dooley Branch, Beckershire, LA 63598-2909</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end of footer -->
+                <!-- start of Unsubscribe Footer -->
+                <tr>
+                    <td style="padding: 30px 80px;" class="uf-td">
+                        <p style="text-align: center; padding-bottom: 30px; color: #85868d; font-family: 'Raleway', 'Arial', sans-serif; font-size: 12px; line-height: 20px; text-decoration: none; margin: 0;">You are receiving this email because you have subscribed to receive updates from us.
+                            Should you wish to cancel your subscription, please <span style="cursor:pointer; color:#c3c3c3; text-decoration: underline;">click here to unsubscribe.</span></p>
+                    </td>
+                </tr>
+                <!-- end of Unsubscribe Footer -->
+                </table>
+            <!-- end of container -->
+            </td>
+        </tr>
+    </table>
+    <!-- end of email -->
+</body>
+</html>
